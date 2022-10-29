@@ -58,7 +58,7 @@ const Section = () => {
               Uncle_Timii
             </h1>
             {/* Hidden slack username */}
-            {/* <h1 id='slack'>oketimilehin</h1> */}
+            {/* <h1 id='slack'>Oluwatimii</h1> */}
           </div>
 
           <div className="absolute right-10 md:right-[13rem] top-0">
