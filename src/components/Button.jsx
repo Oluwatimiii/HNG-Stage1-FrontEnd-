@@ -2,9 +2,15 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button id={props.id} className="filter py-4 outline-none rounded-md">
-      <a href={props.href} target="_blank" >{props.name}</a>
-    </button>
+      <a
+        href={props.href}
+        id={props.id}
+        target="_blank"
+        title={props.title}
+        className="filter py-4 outline-none text-center rounded-md"
+      >
+        {props.name}
+      </a>
   );
 };
 

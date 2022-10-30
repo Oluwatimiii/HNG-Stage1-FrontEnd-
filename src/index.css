@@ -2,18 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
 .filter {
-    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
-    background-color: #1018280D;
-    transition: all .2s ease-in-out;
+  color: black;
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+  background-color: #1018280d;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
 }
 
 .filter:hover {
-    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.05));
-    background-color: #000102bb;
-    color: white;
+  color: black;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.05));
+  background-color: #d0d5dd;
+}
+
+.images {
+  transition: all 0.4s ease;
+}
+
+.images .camera {
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.images:hover .camera {
+  display: flex;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 12px;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
