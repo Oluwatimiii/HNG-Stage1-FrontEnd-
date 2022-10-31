@@ -17,7 +17,7 @@ const LINKS = [
   {
     name: "Zuri Team",
     id: "btn__zuri",
-    href: "“https://training.zuri.team/",
+    href: "https://training.zuri.team/",
   },
   {
     name: "Zuri Books",
