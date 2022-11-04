@@ -6,7 +6,7 @@ import GitImg from "../assets/github.png";
 import MobileShare from "../assets/mobileShare.png";
 import Camera from "../assets/camera.png";
 import DesktopShare from "../assets/desktopShare.png";
-import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const LINKS = [
   {
@@ -80,7 +80,7 @@ const Section = () => {
               src={MobileShare}
               alt="shareMobile icon"
             />
-            <span class="tooltiptext">Share Link</span>
+            <span className="tooltiptext">Share Link</span>
           </div>
         </div>
 
@@ -95,15 +95,14 @@ const Section = () => {
               id={link.id}
             />
           ))}
+          <Link to="/contact" id="contact" className="filter py-4 outline-none text-center rounded-md" >
+            Contact
+          </Link>
         </div>
 
         <div className="flex items-center justify-center space-x-2">
           <img src={SlackImg} alt="slack icon" />
           <img src={GitImg} alt="github icon" />
-        </div>
-
-        <div className="mt-[4rem] md:mt-[6rem]">
-          <Footer />
         </div>
       </div>
     </section>
